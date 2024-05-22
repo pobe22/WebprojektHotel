@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../../CSS/hotel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
 </head>
 <body>
     <header>
-        <h1>Hotel Vallora</h1>
+        <h1><strong>Hotel Vallora</strong></h1>
     </header>
 
     <nav>
@@ -57,11 +58,11 @@
 
     <main>
         <section>
-            <h2>Unsere Zimmer</h2>
+            <h2><strong>Unsere Zimmer</strong></h2>
             <p>Unsere Zimmer sind alle mit einem Doppelbett ausgestattet und bieten Platz für 2 Personen. Die Zimmer sind alle mit einem Balkon ausgestattet, von dem aus Sie einen wunderschönen Blick auf das Meer haben. Die Zimmer sind alle klimatisiert und verfügen über ein eigenes Badezimmer. Die Zimmer sind alle modern eingerichtet und bieten Ihnen einen angenehmen Aufenthalt.</p>
         </section>
         <section>
-            <h2>Preise</h2>
+            <h2><strong>Preise</strong></h2>
             <table>
                 <tr>
                     <th>Zimmer</th>
@@ -69,53 +70,65 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" onclick="scrollToGallery('einzelzimmer')">Einzelzimmer</a>
+                        <a href="#einzelzimmer" onclick="scrollToGallery('einzelzimmer')">Einzelzimmer</a>
                     </td>
                     <td class="price">50€</td>
                 </tr>
                 
                 <tr>
                     <td>
-                        <a href="#" onclick="scrollToGallery('doppelzimmer')">Doppelzimmer</a>
+                        <a href="#doppelzimmer" onclick="scrollToGallery('doppelzimmer')">Doppelzimmer</a>
                     </td>
                     <td class="price">80€</td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" onclick="scrollToGallery('familienzimmer')">Familienzimmer</a>
+                        <a href="#familienzimmer" onclick="scrollToGallery('familienzimmer')">Familienzimmer</a>
                     </td>
                     <td class="price">100€</td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" onclick="scrollToGallery('suite')">Suite</a>
+                        <a href="#suite" onclick="scrollToGallery('suite')">Suite</a>
                     </td>
                     <td class="price">120€</td>
                 </tr>
             </table>
         </section>
         <section>
-            <h2>Bildergalerie</h2>
+            <h2><strong>Bildergalerie</strong></h2>
             <div class="slideshow-container">
-            <div class="mySlides fade" id="einzelzimmer">
-                <h3>Einzelzimmer</h3>
+                <div class="mySlides fade" id="einzelzimmer">
+                    <h3>Einzelzimmer</h3>
                 <img src="../../Pictures/Zimmer/einzelzimmer.jpg" alt="Einzelzimmer">
-            </div>
-            <div class="mySlides fade" id="doppelzimmer">
-                <h3>Doppelzimmer</h3>
-                <img src="../../Pictures/Zimmer/doppelzimmer.jpg" alt="Doppelzimmer">
-            </div>
-            <div class="mySlides fade" id="familienzimmer">
-                <h3>Familienzimmer</h3>
-                <img src="../../Pictures/Zimmer/familienzimmer.jpg" alt="Familienzimmer">
-            </div>
-            <div class="mySlides fade" id="suite">
-                <h3>Suite</h3>
+                </div>
+                <div class="mySlides fade" id="doppelzimmer">
+                    <h3>Doppelzimmer</h3>
+                    <img src="../../Pictures/Zimmer/doppelzimmer.jpg" alt="Doppelzimmer">
+                </div>
+                <div class="mySlides fade" id="familienzimmer">
+                    <h3>Familienzimmer</h3>
+                    <img src="../../Pictures/Zimmer/familienzimmer.jpg" alt="Familienzimmer">
+                </div>
+                <div class="mySlides fade" id="suite">
+                    <h3>Suite</h3>
                 <img src="../../Pictures/Zimmer/suite.jpg" alt="Suite">
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="../../Pictures/Zimmer/einzelzimmer.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="../../Pictures/Zimmer/doppelzimmer.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="../../Pictures/Zimmer/familienzimmer.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                </div>
+                <div class="w3-col s3">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="../../Pictures/Zimmer/suite.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -134,19 +147,34 @@
     var slideIndex = 1;
     showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+    function currentDiv(n) {
+            showDivs(slideIndex = n);
         }
-        slides[slideIndex-1].style.display = "block";  
-    }
 
+    function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " w3-opacity-off";
+        }
+
+    function scrollToGallery(roomId) {
+        var element = document.getElementById(roomId);
+        if (element) {
+            var offsetTop = element.offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
 </script>
