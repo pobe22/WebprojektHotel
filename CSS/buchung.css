@@ -27,12 +27,13 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
+input[type="time"],
 input[type="number"],
 select,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px; /* Fügt Padding zwischen den Inputs hinzu */
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -42,7 +43,7 @@ textarea {
     resize: vertical;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     background-color: #073ea3;
     color: white;
     padding: 10px 20px;

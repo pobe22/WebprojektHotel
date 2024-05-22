@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/restaurant.css">
+        <link rel="stylesheet" href="../../CSS/buchung.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../../icons/restaurant.png" type="image/x-icon">
+        <title>Reservierung | Restaurant Vallora</title>
+    </head>
+    <body>
+        <header>
+            <h1>Restaurant Vallora</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="../Hotel/index.html"><i class="fas fa-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="../Hotel/Zimmer.html" >Hotel</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Hotel/Zimmer.html">Zimmer</a></li>
+                        <li><a href="../Hotel/Buchung.html">Buchung</a></li>
+                        <li><a href="../Hotel/Wellness.html">Wellness</a></li>
+                        <li><a href="../Hotel/Verleih.html">Verleih</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../Restaurant/Restaurant.html" >Restaurant</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Restaurant/Restaurant.html">Restaurant</a></li>
+                        <li><a href="../Restaurant/Speisekarte.html">Speisekarte</a></li>
+                        <li><a href="../Restaurant/Cocktailbar.html">Cocktailbar</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../Umgebung/Umgebung.html" >Umgebung</a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="../Umgebung/Veranstaltungen.html">Veranstaltungen</a></li>
+                        <li><a href="../Umgebung/Ausfluege.html">Ausflüge</a></li>
+                        <li><a href="../Umgebung/Anfahrt.html">Anfahrt</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Hotel/Gaestebuch.html">Gästebuch</a></li>
+                <li class="dropdown">
+                    <a href="../About/Kontakt.html">Über uns</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../About/Team.html">Team</a></li>
+                        <li><a href="../About/Philosophie.html">Philosophie</a></li>
+                        <li><a href="../About/FAQ.html">FAQ</a></li>
+                        <li><a href="../About/Kontakt.html">Kontakt</a></li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Reservierung</h2>
+            <p>Bitte geben Sie Ihre Daten ein, um eine Reservierung zu tätigen.</p>
+            <p>Wir werden uns schnellstmöglich mit Ihnen in Verbindung setzen, um die Reservierung zu bestätigen.</p>
+            <p>Bitte beachten Sie, dass eine Reservierung erst nach Bestätigung durch uns gültig ist.</p>
+            <p>Vielen Dank für Ihr Verständnis.</p>
+            <br>
+
+            
+            <form>
+                <fieldset>
+                    <legend></legend>
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Nachname:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="phone">Telefon:</label><br>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <label for="date">Datum:</label><br>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="time">Uhrzeit:</label><br>
+                    <input type="time" id="time" name="time"><br>
+                    <label for="guests">Anzahl Gäste:</label><br>
+                    <input type="number" id="guests" name="guests" min="1" max="10"><br>
+                    <label for="message">Nachricht:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
+                    <input type="submit" value="Reservieren" onclick="validateForm()">
+                    <input type="reset" value="Zurücksetzen">
+                    <br>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <p>Restaurant Vallora</p>
+            <p>Adresse: <a href="https://www.google.com/maps?q=Hauptstraße+1,+12345+Musterstadt" target="_blank">Hauptstraße 1, 12345 Musterstadt</a></p>
+            <p>Telefon: <a href="tel:0123456789">01234/56789</a></p>
+            <p>E-Mail: <a href="mailto:info@restaurant-vallora.de">info@restaurant-vallora.de</a></p>
+            <p>© 2024 Hotel Vallora</p>
+        </footer>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function validateForm() {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var date = document.getElementById("date").value;
+        var time = document.getElementById("time").value;
+        var guests = document.getElementById("guests").value;
+        var message = document.getElementById("message").value;
+        if (fname == "") {
+            alert("Bitte geben Sie Ihren Vornamen ein.");
+            return false;
+        }
+        if (lname == "") {
+            alert("Bitte geben Sie Ihren Nachnamen ein.");
+            return false;
+        }
+        if (email == "") {
+            alert("Bitte geben Sie Ihre E-Mail-Adresse ein.");
+            return false;
+        }
+        if (phone == "") {
+            alert("Bitte geben Sie Ihre Telefonnummer ein.");
+            return false;
+        }
+        if (date == "") {
+            alert("Bitte geben Sie ein Datum ein.");
+            return false;
+        }
+        if (time == "") {
+            alert("Bitte geben Sie eine Uhrzeit ein.");
+            return false;
+        }
+        if (guests == "") {
+            alert("Bitte geben Sie die Anzahl der Gäste ein.");
+            return false;
+        }
+        alert("Vielen Dank für Ihre Reservierung. Wir freuen uns auf Ihren Besuch.");
+        return true;
+    }
+
+</script>
