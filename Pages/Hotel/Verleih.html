@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/hotel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../icons/hotel.png" type="image/x-icon">
+    <title>Verleih | Hotel Vallora</title>
+</head>
+<body>
+    <header>
+        <h1>Hotel Vallora</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Hotel/index.html"><i class="fas fa-home"></i></a></li>
+            <li class="dropdown">
+                <a href="../Hotel/Zimmer.html" >Hotel</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Hotel/Zimmer.html">Zimmer</a></li>
+                    <li><a href="../Hotel/Buchung.html">Buchung</a></li>
+                    <li><a href="../Hotel/Wellness.html">Wellness</a></li>
+                    <li><a href="../Hotel/Verleih.html">Verleih</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="../Restaurant/Restaurant.html" >Restaurant</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Restaurant/Restaurant.html">Restaurant</a></li>
+                    <li><a href="../Restaurant/Speisekarte.html">Speisekarte</a></li>
+                    <li><a href="../Restaurant/Cocktailbar.html">Cocktailbar</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="../Umgebung/Umgebung.html" >Umgebung</a>
+                <ul class="dropdown-menu">
+                    
+                    <li><a href="../Umgebung/Veranstaltungen.html">Veranstaltungen</a></li>
+                    <li><a href="../Umgebung/Ausfluege.html">Ausflüge</a></li>
+                    <li><a href="../Umgebung/Anfahrt.html">Anfahrt</a></li>
+                </ul>
+            </li>
+            <li><a href="../Hotel/Gaestebuch.html">Gästebuch</a></li>
+            <li class="dropdown">
+                <a href="../About/Kontakt.html">Über uns</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../About/Team.html">Team</a></li>
+                    <li><a href="../About/Philosophie.html">Philosophie</a></li>
+                    <li><a href="../About/FAQ.html">FAQ</a></li>
+                    <li><a href="../About/Kontakt.html">Kontakt</a></li>
+                </ul>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Fahrrad-/Auto-Verleih</h2>
+        <p>Wir bieten Ihnen die Möglichkeit, Fahrräder und Autos zu mieten. So können Sie die Umgebung auf eigene Faust erkunden und sind nicht auf öffentliche Verkehrsmittel angewiesen.</p>
+        <p>Die Preise für die Fahrradvermietung betragen 10€ pro Tag und Fahrrad. Für die Autovermietung berechnen wir 50€ pro Tag und Auto. Bitte beachten Sie, dass Sie für die Autovermietung einen gültigen Führerschein benötigen.</p>
+        <p>Bitte geben Sie bei Ihrer Buchung an, ob Sie ein Fahrrad oder ein Auto mieten möchten. Wir werden uns dann umgehend mit Ihnen in Verbindung setzen.</p>
+        <form name="myForm" action="action_page.php" onsubmit="return validateForm()" method="post">
+            Name:<br>
+            <input type="text" name="fname">
+            <br>
+            <br>
+            E-Mail:<br>
+            <input type="text" name="email">
+            <br>
+            <br>
+            Fahrrad:<br>
+            <input type="radio" name="fahrrad" value="ja"> Ja<br>
+            <input type="radio" name="fahrrad" value="nein"> Nein<br>
+            <br>
+            Auto:<br>
+            <input type="radio" name="auto" value="ja"> Ja<br>
+            <input type="radio" name="auto" value="nein"> Nein<br><br>
+            <input type="submit" value="Buchen">
+            <input type="reset" value="Zurücksetzen">
+            <br>
+        </form>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+        
+
+
+
+</body>
+</html>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name muss ausgefüllt werden");
+            return false;
+        } else {
+            alert("Vielen Dank für Ihre Buchung!");
+        }
+    }
+    function validateForm() {
+        var x = document.forms["myForm"]["fahrrad"].value;
+        if (x == "") {
+            alert("Bitte geben Sie an, ob Sie ein Fahrrad oder ein Auto mieten möchten");
+            return false;
+        } else {
+            alert("Vielen Dank für Ihre Buchung!");
+        }
+    }
+    function validateForm() {
+        var x = document.forms["myForm"]["auto"].value;
+        if (x == "") {
+            alert("Bitte geben Sie an, ob Sie ein Fahrrad oder ein Auto mieten möchten");
+            return false;
+        } else {
+            alert("Vielen Dank für Ihre Buchung!");
+        }
+    }
+
+</script>
