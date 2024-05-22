@@ -22,9 +22,21 @@ img {
     height: auto;
 }
 
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .center-image {
     display: block;
     margin: 0 auto;
+}
+
+.thumbnail {
+    height: 75px;
+    width: 100px;
 }
 
 
@@ -153,6 +165,11 @@ th {
     color:gray;
 }
 
+#infoText {
+    display: none;
+}
+
+
 td img {
     max-width: 100px;
 }
@@ -208,3 +225,8 @@ footer p {
     margin-right: 10px;
     font-size: 20px;
 }
+
+.slideshow-container .mySlides:not(:first-child) {
+    display: none;
+}
+
