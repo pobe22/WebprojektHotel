@@ -133,6 +133,24 @@ table {
     margin-bottom: 20px; 
 }
 
+.table-container {
+    overflow-x: auto; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.smalltabletext th, .smalltabletext td {
+    font-size: 8px;
+}
+.bordered-table {
+    border-collapse: collapse;
+}
+
+.bordered-table th,
+.bordered-table td {
+    border: 1px solid #ddd; 
+}
+
 th, td {
     padding: 10px;
     text-align: left;
