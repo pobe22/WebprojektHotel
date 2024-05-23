@@ -8,53 +8,15 @@
     <link rel="icon" href="../../icons/hotel.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/scroll.css">
+    <script src="/JS/getcontent_hotel.js"></script>
+    <script src="/JS/scrolltotop.js"></script>
     <title>Team | Hotel Vallora</title>
 </head>
 <body>
-    <header>
-        <h1>Hotel Vallora</h1>
-    </header>
+    <header id="header"></header>
 
-    <nav>
-        <ul>
-            <li><a href="../Hotel/index.html"><i class="fas fa-home"></i></a></li>
-            <li class="dropdown">
-                <a href="../Hotel/Zimmer.html" >Hotel</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../Hotel/Zimmer.html">Zimmer</a></li>
-                    <li><a href="../Hotel/Buchung.html">Buchung</a></li>
-                    <li><a href="../Hotel/Wellness.html">Wellness</a></li>
-                    <li><a href="../Hotel/Verleih.html">Verleih</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="../Restaurant/Restaurant.html" >Restaurant</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../Restaurant/Restaurant.html">Restaurant</a></li>
-                    <li><a href="../Restaurant/Speisekarte.html">Speisekarte</a></li>
-                    <li><a href="../Restaurant/Cocktailbar.html">Cocktailbar</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="../Umgebung/Umgebung.html" >Umgebung</a>
-                <ul class="dropdown-menu">
-                    
-                    <li><a href="../Umgebung/Veranstaltungen.html">Veranstaltungen</a></li>
-                    <li><a href="../Umgebung/Ausfluege.html">Ausflüge</a></li>
-                    <li><a href="../Umgebung/Anfahrt.html">Anfahrt</a></li>
-                </ul>
-            </li>
-            <li><a href="../Hotel/Gaestebuch.html">Gästebuch</a></li>
-            <li class="dropdown">
-                <a href="../About/Kontakt.html">Über uns</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../About/Team.html">Team</a></li>
-                    <li><a href="../About/Philosophie.html">Philosophie</a></li>
-                    <li><a href="../About/FAQ.html">FAQ</a></li>
-                    <li><a href="../About/Kontakt.html">Kontakt</a></li>
-                </ul>
-        </ul>
-    </nav>
+    <nav id="nav"></nav>
     
     <main>
         <h2>Unser Team</h2>
@@ -93,17 +55,15 @@
                 <p>Housekeeping</p>
             </div>
         </div>
+
+        <a href="#top" class="scroll-to-top">
+            <div class="arrow-up"></div>
+        </a>
+        
     </main>
     
 
-    <footer>
-        <p>Hotel Vallora<br> Kleiner Kirchweg 3<br>27639 Wurster Nordseeküste</p>
-        <p><a href="mailto:info@hotel-vallora.de">info@hotel-vallora.de</a></p>
-        <p>Tel. <a href="tel:000000000" >000 000 000 </a><br>
-            Fax <a href="tel:000000000">000 000 000</a><br>
-        </p>
-        <p>© 2024 Hotel Vallora</p>
-    </footer>
+    <footer id="footer"></footer>
 
 </body>
 </html>
