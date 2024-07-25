@@ -43,9 +43,16 @@ Die Webseite ist responsiv gestaltet, um eine optimale Benutzererfahrung auf Des
 
 ## Lizenz
 
-Dieses Projekt steht unter der MIT Lizenz. Sie können den Code frei verwenden, ändern und verbreiten, solange Sie die Lizenzbedingungen einhalten.
+Dieses Projekt ist unter der GNU General Public License Version 3 (GPL-3.0) lizenziert. Dies bedeutet, dass jeder das Recht hat, dieses Werk zu kopieren, zu modifizieren und zu verbreiten, solange alle abgeleiteten Werke unter derselben Lizenz veröffentlicht werden.
+
+[GNU General Public License Version 3 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.de.html)
+
+### Kurz gesagt:
+- Du darfst den Code dieses Projekts nutzen, verändern und weiterverbreiten.
+- Alle abgeleiteten Werke müssen unter derselben Lizenz veröffentlicht werden.
+- Eine Kopie der Lizenz muss jedem weiterverbreiteten Werk beigefügt werden.
+
+Für weitere Informationen siehe die vollständige Lizenzvereinbarung.
 
 ---
-
-Für weitere Informationen besuchen Sie die Webseite des [Hotel Vallora](https://www.hotel-vallora.de).
 
